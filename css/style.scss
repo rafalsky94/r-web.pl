@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'norwesterregular';
+    src: url('../fonts/norwester/norwester-webfont.eot');
+    src: url('../fonts/norwester/norwester-webfont.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/norwester/norwester-webfont.woff2') format('woff2'), 
+    url('../fonts/norwester/norwester-webfont.woff') format('woff'), url('../fonts/norwester/norwester-webfont.ttf') format('truetype'), 
+    url('../fonts/norwester/norwester-webfont.svg#norwesterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "norwesterregular", sans-serif;
+    font-size: 5rem;
+    padding: 5rem 0;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/************************************/
+
+
+/*           N A V - B A R          */
+
+
+/************************************/
+
+.navbar {
+    width: 100vw;
+    background: white;
+    .container {
+        .navbar-brand {
+            img {
+                width: 5rem;
+            }
+        }
+        .navbar-nav {
+            text-align: center;
+            .nav-item {
+                font-family: "norwesterregular", sans-serif;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                @media screen and (min-width: 768px) {
+                    margin-left: 2rem; 
+                }
+            }
+            .active {
+                color: black;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}
+
+
+/************************************/
+
+
+/*            B A N N E R           */
+
+
+/************************************/
+
+#banner {
+    margin-top: 68px;
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 512px;
+    .container {
+        text-align: center;
+        .row {
+            .col-md-12 {
+                line-height: 32rem;
+                .logo {
+                    display: inline-block;
+                    opacity: 0.8;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/************************************/
+
+
+/*             O F F E R            */
+
+
+/************************************/
+
+#offer {
+    height: 85rem;
+    @media screen and (min-width: 768px) {
+        height: 700px;
+    }
+    .container {
+        .row {
+            text-align: center;
+            .col-md-4 {
+                padding: 2rem 0;
+                @media screen and (min-width: 768px) {
+                    padding: 0;
+                }
+                h3 {
+                    padding: 1rem 0;
+                    font-weight: bold;
+                }
+                p {
+                    padding: 0 2rem;
+                }
+            }
+            .mid {
+                @media screen and (min-width: 768px) {
+                    border-left: 0.2rem solid black;
+                    border-right: 0.2rem solid black;
+                }
+            }
+        }
+    }
+}
+
+
+/************************************/
+
+
+/*           C O N T A C T          */
+
+
+/************************************/
+
+#contact {
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 68rem;
+    @media screen and (min-width: 768px) {
+        height: 820px;
+    }
+    .container {
+        .contact-box {
+            border-radius: 2rem;
+            opacity: 0.9;
+            width: 100%;
+            margin: 10rem 0;
+            display: inline-block;
+            background: white;
+            text-align: center;
+            height: 48rem;
+            @media screen and (min-width: 768px) {
+                height: 500px;
+            }
+            h2 {
+                padding: 2rem 0;
+            }
+            form {
+                height: 100%;
+                .row {
+                    .col-md-4 {
+                        input {
+                            margin-bottom: 2.5rem;
+                            border-radius: 5rem;
+                            width: 80%;
+                            padding: 0.5rem;
+                            border: 0.1rem solid grey;
+                        }
+                    }
+                    .col-md-8 {
+                        textarea {
+                            width: 80%;
+                            height: 15rem;
+                            resize: none;
+                            border-radius: 2rem;
+                            padding: 0.5rem;
+                            border: 0.1rem solid grey;
+                        }
+                    }
+                    .col-md-12 {
+                        button {
+                            margin: 2rem 0;
+                            padding: 0.5rem 2rem;
+                            border-radius: 2rem;
+                            border: 0.1rem solid grey;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/************************************/
+
+
+/*      T E C H N O L O G I E S     */
+
+
+/************************************/
+
+#technologies {
+    .container {
+        .row {
+            flex-wrap: nowrap;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 768px) {
+                    margin-bottom: 3rem;
+            }
+            .col-md-12 {
+                h2 {
+                    font-size: 3rem;
+                    padding: 3rem 0;
+                    @media screen and (min-width: 768px) {
+                        font-size: 5rem;
+                        padding: 5rem 0;
+                    }
+                }
+            }
+            .col-md-3 {
+                text-align: center;
+                padding: 1rem 0;
+                @media screen and (min-width: 768px) {
+                    padding: 0;
+                }
+                img {
+                    width: 70%;
+                }
+            }
+            .gulp {
+                text-align: center;
+                img {
+                        width: 50%;
+                }
+            }
+        }
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/************************************/
+
+
+/*         P O R T F O L I O        */
+
+
+/************************************/
+
+#portfolio {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    @media screen and (min-width: 768px) {
+        height: 860px;
+    }
+    .container {
+        .row {
+            text-align: center;
+            .col-md-12 {
+                h2 {
+                    color: white;
+                    opacity: 0.8;
+                }
+            }
+            .col-md-4, .col-md-6 {
+                margin-bottom: 2rem;
+                .btn {
+                    padding: 0;
+                    border: 0;
+                    background: transparent;
+                    margin: 1rem 0;
+                    @media screen and (min-width: 768px) {
+                        margin: 0;
+                    }
+                    img {
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                    &:hover {
+                        -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+                        box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.75);
+                    }
+                }
+                .modal {
+                    .modal-dialog {
+                        
+                        @media screen and (min-width: 576px) {
+                            max-width: 90vw !important;
+                        }
+                        .modal-content {
+                           
+                            .modal-header {
+
+                            }
+                            .modal-body {
+                                padding: 0;
+                                height: 75vh;
+                                @media screen and (min-width: 768px) {
+                                    height: 85vh;
+                                }
+                                iframe {
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-md-6 {
+                .btn {
+                    @media screen and (min-width: 768px) {
+                        width: 70%;
+                    }
+                    
+                }
+                .soon {
+                    height: 100%;
+                    background: lightgrey;
+                    opacity: 0.9;
+                    width: 100%;
+                    @media screen and (min-width: 768px) {
+                        width: 70%;
+                    }
+                    h5 {
+                        font-family: "norwesterregular", sans-serif;
+                        text-shadow: 5px 5px 5px rgba(150, 150, 150, 1);
+                        font-size: 3rem;
+                        height: 100%;
+                        padding: 22% 0;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/************************************/
+
+
+/*            F O O T E R           */
+
+
+/************************************/
+
+footer {
+    background: black;
+    padding: 5rem 0;
+    .container {
+        .row {
+            .col-lg-4 {
+                text-align: center;
+                img {
+                    width: 100%;
+                }
+                .icons {
+                    margin: 2rem 0;
+                    a {
+                        margin: 0 1rem;
+                        img {
+                            width: 15%;
+                        }
+                    }
+                }
+                
+            }
+            .col-md-12 {
+                
+                .copyright {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
